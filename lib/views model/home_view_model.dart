@@ -5,13 +5,13 @@ class HomeViewModel extends BaseViewModel {
 
   void initialise() {
     title = 'initialised';
-    notifyListeners();
+    rebuildUi();
   }
 
   int counter = 0;
   void updateTitle() {
     counter++;
     title = '$counter';
-    notifyListeners();
+    rebuildUi();
   }
 }
