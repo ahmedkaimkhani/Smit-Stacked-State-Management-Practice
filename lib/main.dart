@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:stacked_management_practice/views/home_view.dart';
+import 'counter/views/home_view.dart';
 
 void main() {
   runApp(const MyApp());

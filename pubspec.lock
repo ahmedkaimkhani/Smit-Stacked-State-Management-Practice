@@ -481,7 +481,7 @@ packages:
     source: hosted
     version: "3.4.1+1"
   stacked_generator:
-    dependency: "direct main"
+    dependency: "direct dev"
     description:
       name: stacked_generator
       sha256: c141baf56cb7168dfde142d3578118c7bf914be9fb62bc8593344e97894ac8f9
