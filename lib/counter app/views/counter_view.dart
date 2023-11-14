@@ -11,7 +11,23 @@ class CounterView extends StatelessWidget {
     return ViewModelBuilder.reactive(
       viewModelBuilder: () => CounterViewModel(),
       builder: (context, viewModel, child) {
-        return const Scaffold();
+        return Scaffold(
+          body: SafeArea(
+            child: Column(
+              children: [
+                const Text('Counter value'),
+                ElevatedButton(
+                  onPressed: () {},
+                  child: const Text('Add Counter Value'),
+                ),
+                ElevatedButton(
+                  onPressed: () {},
+                  child: const Text('Navigate to HomeView'),
+                )
+              ],
+            ),
+          ),
+        );
       },
     );
   }
