@@ -20,7 +20,7 @@ class HomeViews extends StatelessWidget {
                   Text(viewModel.counterService.counterValue.toString()),
                   ElevatedButton(
                       onPressed: () {
-                        viewModel.bottomSheet();
+                        viewModel.bottomSheet().toString();
                       },
                       child: const Text('Open Sheet'))
                 ],
