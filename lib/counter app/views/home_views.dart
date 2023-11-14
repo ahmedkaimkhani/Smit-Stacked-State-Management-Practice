@@ -18,6 +18,11 @@ class HomeViews extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Text(viewModel.counterService.counterValue.toString()),
+                  ElevatedButton(
+                      onPressed: () {
+                        viewModel.bottomSheet();
+                      },
+                      child: const Text('Open Sheet'))
                 ],
               ),
             ),

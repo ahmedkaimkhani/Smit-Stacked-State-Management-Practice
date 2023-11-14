@@ -8,6 +8,7 @@ import 'package:stacked_services/stacked_services.dart';
   MaterialRoute(page: CounterView, initial: true),
   MaterialRoute(page: HomeViews),
 ], dependencies: [
+  Singleton(classType: BottomSheetService),
   Singleton(classType: NavigationService),
   LazySingleton(classType: CounterService)
 ])
