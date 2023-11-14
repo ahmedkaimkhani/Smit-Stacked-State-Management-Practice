@@ -15,7 +15,7 @@ import 'package:stacked_management_practice/counter%20app/views/home_views.dart'
 import 'package:stacked_services/stacked_services.dart' as _i5;
 
 class Routes {
-  static const counterView = '/counter-view';
+  static const counterView = '/';
 
   static const homeViews = '/home-views';
 
