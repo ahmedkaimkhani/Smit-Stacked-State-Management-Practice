@@ -23,7 +23,9 @@ class CounterView extends StatelessWidget {
                     child: const Text('Add Counter Value'),
                   ),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      viewModel.navigateToHome();
+                    },
                     child: const Text('Navigate to HomeView'),
                   )
                 ],
