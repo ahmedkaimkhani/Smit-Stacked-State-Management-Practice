@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
 
-import '../../counter/views model/home_view_model.dart';
+import '../view model/home_viewmodel.dart';
 
 class HomeViews extends StatelessWidget {
   const HomeViews({super.key});
@@ -9,15 +9,15 @@ class HomeViews extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ViewModelBuilder.reactive(
-      viewModelBuilder: () => HomeViewModel(),
+      viewModelBuilder: () => HomeViewsModel(),
       builder: (context, viewModel, child) {
-        return const Scaffold(
+        return Scaffold(
           body: SafeArea(
             child: Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Text('Counter value'),
+                  Text(viewModel.counterService.counterValue.toString()),
                 ],
               ),
             ),

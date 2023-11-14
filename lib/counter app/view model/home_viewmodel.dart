@@ -1,3 +1,7 @@
 import 'package:stacked/stacked.dart';
 
-class HomeViewModel extends BaseViewModel {}
+import '../services/counter_service.dart';
+
+class HomeViewsModel extends BaseViewModel {
+  final counterService = CounterService();
+}

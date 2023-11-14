@@ -14,5 +14,6 @@ class CounterViewModel extends BaseViewModel {
 
   addValue() {
     counterService.addCounterValue();
+    rebuildUi();
   }
 }
