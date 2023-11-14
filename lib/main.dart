@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'counter app/views/counter_view.dart';
+import 'package:stacked_management_practice/counter%20app/app/app.router.dart';
+import 'package:stacked_services/stacked_services.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,9 +12,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'Flutter Demo',
-      home: CounterView(),
+    return MaterialApp(
+      navigatorKey: StackedService.navigatorKey,
+      onGenerateRoute: StackedRouter().onGenerateRoute,
     );
   }
 }
