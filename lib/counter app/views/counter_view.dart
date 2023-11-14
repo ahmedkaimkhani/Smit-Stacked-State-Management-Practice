@@ -19,7 +19,9 @@ class CounterView extends StatelessWidget {
                 children: [
                   const Text('Counter value'),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      viewModel.addValue();
+                    },
                     child: const Text('Add Counter Value'),
                   ),
                   ElevatedButton(
